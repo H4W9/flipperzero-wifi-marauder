@@ -4,9 +4,10 @@ on:
     branches:
       - feature_wifi_marauder_app
   pull_request:
-  schedule:
+  workflow_dispatch: 
+  #schedule:
     # do a build every day
-    - cron: "1 1 * * *"
+  #  - cron: "1 1 * * *"
 jobs:
   ufbt-build-action:
     runs-on: ubuntu-latest
